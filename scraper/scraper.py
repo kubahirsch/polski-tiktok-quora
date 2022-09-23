@@ -1,15 +1,28 @@
 from bs4 import BeautifulSoup
-from helium import *
+from selenium import webdriver
+from webdriver_manager.chrome import ChromeDriverManager
+import time
 
 class Scraper():
 
     def scrape_data(self, url):
-        browser = start_chrome(url, headless=True)
-        source = browser.page_source
-        print(source)
-        # session = BeautifulSoup(source, 'lxml')
-        # question = session.find_all("div", {"class": "q-text puppeteer_test_question_title"})
-        # print(question)
+        driver = webdriver.Chrome(ChromeDriverManager().install())
+        driver.get(url)
+        time.sleep(2)
+        # driver.switch_to.frame(driver.find_elements_by_tag_name('iframe')[0])
+        # button_el = driver.find_elements_by_class_name('q-text qu-ellipsis qu-whiteSpace--nowrap')[0]
+        # button_el.click()
+        # action = webdriver.common.action_chains.ActionChains(driver)
+        # action.move_to_element_with_offset(button_el, 5, 0)
+        # action.click()
+        # action.perform()
+        source = driver.page_source
+        # source = driver.execute_script("return document.body.innerHTML;")
+        session = BeautifulSoup(source, 'html.parser')
+        question = session.find("div", {"class": "q-text puppeteer_test_question_title"}).get_text()
+        answers_divs = session.find_all("div", {"class": "q-box spacing_log_answer_content puppeteer_test_answer_content"})
+        answers = [i.get_text() for i in answers_divs]
+        driver.quit()
+        return {"answers": answers, "question": question}
+        
 
-scraper = Scraper()
-scraper.scrape_data('https://pl.quora.com/Do-os%C3%B3b-kt%C3%B3re-by%C5%82y-w-Australii-co-was-najbardziej-zaskoczy%C5%82o')
