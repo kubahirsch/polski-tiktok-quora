@@ -14,22 +14,23 @@
     </form>
     <br><br>
     <p>Tak wygląda zawartość quory. Edytuj pytania i odpowiedzi tak, żeby tik tok nie był za długi i nudny </p>
-    <form method="post" action="/startgenerating">
-      <textarea name="question" cols="50" rows="4">{{q_a['question']}}</textarea>
-      <br>
-      <br>
-        {% for i in q_a['answers'] %}
-            <textarea name="{{loop.index}}" id="" cols="50" rows="20">
-              {{i}}
-            </textarea>
-            You want to use it?<input type="checkbox" value="{{loop.index}}" name="using" id="using" checked>
-                <br>
-                <br>
-        {% endfor %}
-        <input type="submit" value="Sprawdź ile będzie trwał ">
-        <audio src=""></audio>
-    </form>
-    
-    
+    <div class="form">
+      <form method="post" action="/startgenerating">
+        <textarea name="question" cols="50" rows="4">{{question}}</textarea>
+        <br>
+        <br>
+          {% for i in answers %}
+              <textarea name="{{i}}" id="" cols="50" rows="20">
+                {{i}}
+              </textarea>
+              You want to use it?<input type="checkbox" value="{{loop.index0}}" name="using" id="using" checked>
+                  <br>
+                  <br>
+          {% endfor %}
+          <input type="submit" value="Sprawdź ile będzie trwał ">
+          <audio src=""></audio>
+      
+      </form>
+    </div>    
   </body>
 </html>

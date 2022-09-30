@@ -3,4 +3,6 @@ błędy:
 3. pobiera wszyskite odpowiedzi łącznie z tymi na inne potania, które są sugerowane 
 4. zmienić googlowy text to speech na tik tokowy !!! : DDD
 5. strasznie długo tworzy się audio 
-6. nie działa odtwarzanie (przycisk na szaro)
+7. wait for load selenium (co jak ktoś ma słaby net)
+
+playwright nie działąło ale pobrałęm wersję 1.15.3 i zadziałało

@@ -19,17 +19,16 @@
       <br>
       <br>
         {% for i in answers%}
-            <textarea name="{{loop.index}}" id="" cols="50" rows="20">
+            <textarea name="{{i}}" id="" cols="50" rows="20">
               {{i}}
             </textarea>
-            You want to use it?<input type="checkbox" value="{{loop.index}}" name="using" id="using" checked>
+            You want to use it?<input type="checkbox" value="{{loop.index0}}" name="using" id="" checked>
                 <br>
                 <br>
         {% endfor %}
         <input type="submit" value="Sprawdź ile będzie trwał ">
     </form>
-    <audio controls>
-      <source src="../assets/sound.mp3" type="audio/mp3"> 
+    <audio controls="controls" src="{{url_for('static', filename='sound.mp3')}} ">
     </audio>
     
     
