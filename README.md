@@ -2,7 +2,7 @@
 
 The idea is to create a website where you can just put a link to a quora post, choose what you want to include and the bot will generate a tik tok video. 
 
-Created by Kuba Hirsch
+*Created by Kuba Hirsch*
 
 
 ## Current state 🚢
