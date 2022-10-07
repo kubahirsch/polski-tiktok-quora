@@ -10,7 +10,7 @@ Created by Kuba Hirsch
 1. Web gui works
 2. Bot scrapes answers and question from a post 
 3. Then you can choose what you want to include
-4. bot creates a audio file
+4. bot creates an audio file
 
 ## Requirements
 python
