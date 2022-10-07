@@ -29,3 +29,7 @@ python
 2. Scraper takes also the suggested answers of a different posts 
 3. zmienić googlowy tts na tik tokowy
 4. wait for load selenium. Jak ktoś ma słaby internet to scraper może nie działać 
+
+## What next
+1. Making screens from playwright
+2. Making whole tik tok with movie py
