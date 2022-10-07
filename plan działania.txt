@@ -1,5 +1,0 @@
-1. tworzę scraping quory screeny przez scraping, dane posta przez api), z podaniem numeru posta tak żeby zapisało się w folderze
-2. tworzę movie py z jakimś tłem
-3. tworzę web gui które daje ci możliwość przewijania pomiędzy postami i wybrania z którego zrobi filmik
-
-        
