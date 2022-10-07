@@ -5,14 +5,14 @@ The idea is to create a website where you can just put a link to a quora post, c
 Created by Kuba Hirsch
 
 
-## Current state
+## Current state 🚢
 
 1. Web gui works
 2. Bot scrapes answers and question from a post 
 3. Then you can choose what you want to include
 4. bot creates an audio file
 
-## Requirements
+## Requirements🛒
 python
 
 ## Installation 👩‍💻
@@ -30,6 +30,6 @@ python
 3. zmienić googlowy tts na tik tokowy
 4. wait for load selenium. Jak ktoś ma słaby internet to scraper może nie działać 
 
-## What next
+## What next 🛠
 1. Making screens from playwright
 2. Making whole tik tok with movie py
