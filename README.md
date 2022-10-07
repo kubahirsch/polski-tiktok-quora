@@ -31,6 +31,6 @@ python
 4. wait for load selenium. Jak ktoś ma słaby internet to scraper może nie działać 
 
 ## What next 🛠
-1. Making screens with playwright
+1. Making screens with playwright of quora answers
 2. Taking some random background
-2. Bot will wdit screens, background and audio
+2. Bot will combine screens, background and audio with movie py
