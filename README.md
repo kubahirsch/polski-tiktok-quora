@@ -31,5 +31,6 @@ python
 4. wait for load selenium. Jak ktoś ma słaby internet to scraper może nie działać 
 
 ## What next 🛠
-1. Making screens from playwright
-2. Making whole tik tok with movie py
+1. Making screens with playwright
+2. Taking some random background
+2. Bot will wdit screens, background and audio
